@@ -2,6 +2,7 @@ package com.example.demo.courses;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
 
 import com.example.demo.topic.Topic;
 
@@ -13,6 +14,7 @@ public class Course {
 	private String courseName;
 	private String courseDescription;
 	
+	@ManyToOne
 	private Topic topic;
 	
 	public Course() {};
